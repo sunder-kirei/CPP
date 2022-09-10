@@ -1,3 +1,4 @@
-if(nxtIdx == 0){
-            //     return 0;
-            // }
+s1.push(1);
+    // s1.push(2);
+    // s1.push(3);
+    // s1.push(4);
