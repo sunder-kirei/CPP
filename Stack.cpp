@@ -43,4 +43,10 @@ public:
     {
         return this->size;
     }
+    int top()
+    {
+        if (head == NULL)
+            return 0;
+        return head->data;
+    }
 };
