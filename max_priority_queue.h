@@ -45,7 +45,7 @@ private:
             if (left > size)
                 left = right = parentIdx;
 
-            const int maxIdx = max(left, right);
+            const int maxIdx = queue.at(left) > queue.at(right) ? left : right;
             if (queue.at(maxIdx) > queue.at(parentIdx))
             {
                 // Swap parent and max
