@@ -1,5 +1,5 @@
 #include <iostream>
-#include "priority_queue.h"
+#include "max_priority_queue.h"
 using namespace std;
 
 int main()
@@ -10,6 +10,8 @@ int main()
     p.insert(11);
     p.insert(9);
 
-    cout << p.remove() << endl;
-    cout << p.remove() << endl;
+    cout << p.removeMax() << endl;
+    cout << p.removeMax() << endl;
+    cout << p.removeMax() << endl;
+    cout << p.removeMax() << endl;
 }

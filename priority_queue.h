@@ -35,8 +35,19 @@ class PriorityQueue
         {
             int left = 2 * currentIdx + 1;
             int right = 2 * currentIdx + 2;
-
-            int minIdx = queue[left] < queue[right] ? left : right;
+            int minIdx;
+            if (right > queue.size())
+            {
+                right = left;
+            }
+            if (left > queue.size())
+            {
+                minIdx = currentIdx;
+            }
+            else
+            {
+                minIdx = queue[left] < queue[right] ? left : right;
+            }
             if (queue[currentIdx] < queue[minIdx])
             {
                 int temp = queue[currentIdx];
