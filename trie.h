@@ -44,7 +44,7 @@ private:
         return search(data.substr(1), child);
     }
 
-    void remove(string data, TrieNode *root) ~
+    void remove(string data, TrieNode *root)
     {
         if (data.empty())
         {
