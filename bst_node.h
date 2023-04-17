@@ -81,6 +81,7 @@ private:
                 delete root;
                 return new_root;
             }
+            // Replace with inorder successor(smallest element to the right of the node)
             auto temp = root->right;
             while (temp->left != NULL)
             {
